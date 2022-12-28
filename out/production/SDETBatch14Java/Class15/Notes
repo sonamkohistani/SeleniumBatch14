@@ -1,0 +1,34 @@
+why we should exclude packages and class from compiling in intellij if we have a syntax error in any of the file in
+a project we cant run
+another file unless and until we fic that error. some time we want to execute code in some files without fixing
+those issue this is where we should exc
+How to exclude packages:
+Double-click the shift button twice quickly and type excludes and hit enter from the pop-up window click on the plus
+button and select the packages that you want to exclude.
+How java code is compiled/executed on a computer :
+we write the code in file with extension .java
+once we hit the run button a software program called compiler checks this code fro errors and convert it to byte code.
+usually stored in a folder called bin/out.
+JVM another software further converts this code to binary code and this binary code is what is excluded on your computers.
+Methods in java:
+ Method is a block of code. or some java statement grouped together .
+ why we should learn about the methods:
+ Methods help us reduce the amount of code that we have to write.for Example if a poece od code is being repeated.
+ we can create a method for it and simple call that method
+ whenever we need that logic again.
+Syntax of creating a method:
+ we can create a method inside the class.
+ [datatype] [method name] [(datatype variableName)][method body]
+ [datatype] can be void boolean string int etc....
+ [method name] they are like variable names.
+ [(datatype variableName)]used to pass data will calling method
+
+How do we decide that we should use void or a method with a return keyword1:
+   if we are building a method that will be used by other parts of your code which required some data from your method
+   like an if condition we should not create methods with void type
+Example:
+  string str="hello";
+  int length=str.length();
+  if(!str.isEmpty()&&length%2!=0&&length>=3){
+  int middleIndex=length/2;
+  system.out.println(str.charAt(middleIndex));
